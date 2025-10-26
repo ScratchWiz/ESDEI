@@ -1,403 +1,172 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ESDEI - Eastlake Speech & Debate Education Initiative</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6; color:#333; }
+    header { background:linear-gradient(135deg,#1e3c72 0%,#2a5298 100%); color:#fff; padding:2rem 0; text-align:center; box-shadow:0 4px 6px rgba(0,0,0,.1); }
+    header h1 { font-size:2.5rem; margin-bottom:.5rem; font-weight:700; }
+    header p { font-size:1.2rem; opacity:.95; }
+    nav { background:#fff; padding:1rem 0; box-shadow:0 2px 4px rgba(0,0,0,.1); position:sticky; top:0; z-index:100; }
+    nav ul { list-style:none; display:flex; justify-content:center; flex-wrap:wrap; gap:2rem; padding:0 1rem; }
+    nav a { color:#1e3c72; text-decoration:none; font-weight:600; transition:color .3s; }
+    nav a:hover { color:#2a5298; }
+    .container { max-width:1200px; margin:0 auto; padding:3rem 2rem; }
+    .hero { background:linear-gradient(135deg,#667eea 0%,#764ba2 100%); color:#fff; padding:4rem 2rem; text-align:center; margin-bottom:3rem; border-radius:10px; }
+    .hero h2 { font-size:2.5rem; margin-bottom:1rem; }
+    .hero p { font-size:1.3rem; max-width:800px; margin:0 auto; line-height:1.8; }
+    .section { margin-bottom:4rem; }
+    .section h2 { color:#1e3c72; font-size:2rem; margin-bottom:1.5rem; border-bottom:3px solid #2a5298; padding-bottom:.5rem; }
+    .civic-engagement { background:linear-gradient(135deg,#f5f7fa 0%,#e8ecf1 100%); padding:3rem; border-radius:10px; border-left:5px solid #2a5298; margin:2rem 0; }
+    .civic-engagement h3 { color:#1e3c72; font-size:1.8rem; margin-bottom:1rem; }
+    .civic-engagement p { font-size:1.15rem; color:#444; line-height:1.9; margin-bottom:1.5rem; }
+    .polarization-box { background:#fff; padding:2rem; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.08); margin-top:1.5rem; }
+    .polarization-box h4 { color:#764ba2; font-size:1.4rem; margin-bottom:1rem; }
+    .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2rem; margin-top:2rem; }
+    .card { background:#fff; padding:2rem; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,.1); transition:transform .3s, box-shadow .3s; }
+    .card:hover { transform:translateY(-5px); box-shadow:0 8px 12px rgba(0,0,0,.15); }
+    .card h3 { color:#2a5298; margin-bottom:1rem; font-size:1.5rem; }
+    .card p { color:#555; line-height:1.7; }
+    .icon { font-size:2rem; margin-bottom:.5rem; }
+    .benefits { background:#f8f9fa; padding:2rem; border-radius:10px; margin-top:2rem; }
+    .benefits ul { list-style-position:inside; color:#555; }
+    .benefits li { padding:.5rem 0; line-height:1.7; }
+    .cta { background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%); color:#fff; padding:3rem 2rem; text-align:center; border-radius:10px; margin-top:3rem; }
+    .cta h2 { margin-bottom:1rem; color:#fff; border:none; }
+    .cta button { background:#fff; color:#f5576c; border:none; padding:1rem 2rem; font-size:1.1rem; font-weight:600; border-radius:5px; cursor:pointer; transition:transform .3s; margin-top:1rem; }
+    .cta button:hover { transform:scale(1.05); }
+    footer { background:#1e3c72; color:#fff; text-align:center; padding:2rem 0; margin-top:4rem; }
+    @media (max-width:768px){ header h1{font-size:2rem;} .hero h2{font-size:2rem;} nav ul{flex-direction:column; align-items:center; gap:1rem;} .civic-engagement{padding:2rem 1.5rem;} }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;ESDEI - Eastlake Speech &amp; Debate Education Initiative&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 6px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>header h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>header p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.95;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>nav {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 4px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: sticky;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>z-index: 100;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>nav ul {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>list-style: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>flex-wrap: wrap;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>nav a {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #1e3c72;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: color 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>nav a:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #2a5298;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1200px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 3rem 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 4rem 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 3rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.3rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.8;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.section {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 4rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.section h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #1e3c72;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 3px solid #2a5298;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.civic-engagement {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 3rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-left: 5px solid #2a5298;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 2rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.civic-engagement h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #1e3c72;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.8rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.civic-engagement p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.15rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #444;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.9;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.polarization-box {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 8px rgba(0,0,0,0.08);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.polarization-box h4 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #764ba2;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.4rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cards {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 6px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s, box-shadow 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-5px);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 8px 12px rgba(0,0,0,0.15);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #2a5298;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.card p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.7;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.benefits {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #f8f9fa;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.benefits ul {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>list-style-position: inside;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #555;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.benefits li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0.5rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.7;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.icon {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cta {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 3rem 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 3rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cta h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cta button {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #f5576c;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.cta button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(1.05);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #1e3c72;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 4rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>header h1 {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>font-size: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.hero h2 {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>font-size: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>nav ul {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>gap: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.civic-engagement {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 2rem 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;ESDEI&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Eastlake Speech &amp; Debate Education Initiative&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#mission"&gt;Our Mission&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#impact"&gt;Our Impact&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#programs"&gt;Programs&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#benefits"&gt;Benefits&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;a href="#contact"&gt;Get Involved&lt;/a&gt;&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hero"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Building Bridges Through Understanding&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Teaching middle schoolers to see all sides of an argument, fostering civic engagement, and creating a more united generation.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="about" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;About ESDEI&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-size: 1.1rem; color: #555; line-height: 1.8;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>The Eastlake Speech &amp; Debate Education Initiative (ESDEI) is a student-led program dedicated to introducing middle school students to the art of public speaking and competitive debate. Founded by members of the Eastlake High School Speech and Debate Club, we believe that every student deserves the opportunity to develop critical thinking skills, build confidence, and find their voice.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="mission" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Our Mission&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="civic-engagement"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Addressing Political Polarization Through Education&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>In an era of increasing division, ESDEI is tackling one of our nation's most pressing challenges: political polarization. By teaching young people to genuinely understand and articulate multiple perspectives on complex issues, we're building a foundation for a more civically engaged and collaborative future.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="polarization-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4&gt;How We're Making a Difference&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>Through debate education, students learn that seeing all sides of an argument isn't about abandoning their beliefs—it's about strengthening their ability to engage in meaningful dialogue. When middle schoolers practice arguing both for and against a position, they develop empathy, critical thinking, and the communication skills necessary to bridge divides rather than deepen them.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>This isn't just about winning competitions. It's about creating a generation of citizens who can listen, understand, collaborate, and find common ground even when they disagree. By starting this education in middle school, we're shaping future leaders who will approach civic engagement with nuance, respect, and open-mindedness.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cards"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="icon"&gt;🔍&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;See All Sides&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Students learn to research, understand, and articulate multiple perspectives on complex issues—a critical skill for breaking down echo chambers and fostering genuine dialogue across differences.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="icon"&gt;🤝&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Foster Collaboration&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Through structured debate and respectful discourse, we teach students that disagreement doesn't mean division. Building communication bridges creates a more united community.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="icon"&gt;🗳️&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Civic Engagement&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Equipping young people with the tools to engage thoughtfully with important issues, preparing them to be informed, empathetic citizens who contribute to a healthier democracy.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="impact" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;The Ripple Effect&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cards"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;💙 Give Back to Our Community&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Share our passion and experience with younger students, creating a supportive community that fosters growth, mutual understanding, and collaborative problem-solving.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;🚀 Prepare for High School &amp; Beyond&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Equip students with the skills and confidence they need to excel in competition and in life, creating a seamless transition to Eastlake's program while building lifelong critical thinking abilities.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;🌟 Transform Perspectives&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Students who learn to genuinely engage with opposing viewpoints become better listeners, stronger thinkers, and more effective communicators in every aspect of their lives.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="programs" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Our Programs&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="cards"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Perspective-Building Workshops&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Interactive sessions where students practice arguing multiple sides of real-world issues, learning that understanding different viewpoints strengthens rather than weakens their own reasoning.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Collaborative Debate Rounds&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Hands-on debate experience where students work together to explore complex topics, receiving constructive feedback in a supportive environment that values listening as much as speaking.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Mentorship Program&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;One-on-one pairing with Eastlake student mentors who model respectful discourse, critical analysis, and how to engage with difficult topics while maintaining empathy and open-mindedness.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="benefits" class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Skills for Life &amp; Democracy&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="benefits"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Multiperspective Thinking:&lt;/strong&gt; Learn to analyze complex issues from all angles, a crucial skill for civic engagement and collaborative problem-solving.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Empathetic Communication:&lt;/strong&gt; Develop the ability to understand and articulate viewpoints different from your own, building bridges across differences.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Critical Analysis:&lt;/strong&gt; Master research and evaluation skills that help identify credible information and logical arguments in an age of misinformation.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Confident Expression:&lt;/strong&gt; Build public speaking skills that translate to classroom presentations, civic participation, and everyday conversations.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Collaborative Spirit:&lt;/strong&gt; Join a community that values respectful discourse, mutual learning, and working together despite disagreements.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;li&gt;&lt;strong&gt;Civic Readiness:&lt;/strong&gt; Gain the tools to engage thoughtfully with important issues, preparing to be an informed and active participant in democracy.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="contact" class="cta"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Join the Movement&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-size: 1.2rem; margin-bottom: 1rem;"&gt;Whether you're a middle school student eager to learn, a parent interested in our programs, or a school administrator looking to partner with us to combat polarization and build civic engagement, we'd love to hear from you!&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="alert('Contact us at: esdei@eastlake.edu\n\nFollow us on social media for updates and event announcements!')"&gt;Contact Us&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2025 Eastlake Speech &amp; Debate Education Initiative | Eastlake High School&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="margin-top: 0.5rem; opacity: 0.8;"&gt;Building bridges, not walls. One conversation at a time.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <header>
+    <h1>ESDEI</h1>
+    <p>Eastlake Speech &amp; Debate Education Initiative</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#mission">Our Mission</a></li>
+      <li><a href="#impact">Our Impact</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#contact">Get Involved</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="hero">
+      <h2>Building Bridges Through Understanding</h2>
+      <p>Teaching middle schoolers to see all sides of an argument, fostering civic engagement, and creating a more united generation.</p>
+    </div>
+
+    <section id="about" class="section">
+      <h2>About ESDEI</h2>
+      <p style="font-size:1.1rem; color:#555; line-height:1.8;">
+        The Eastlake Speech &amp; Debate Education Initiative (ESDEI) is a student-led program dedicated to introducing middle school students to the art of public speaking and competitive debate. Founded by members of the Eastlake High School Speech and Debate Club, we believe that every student deserves the opportunity to develop critical thinking skills, build confidence, and find their voice.
+      </p>
+    </section>
+
+    <section id="mission" class="section">
+      <h2>Our Mission</h2>
+
+      <div class="civic-engagement">
+        <h3>Addressing Political Polarization Through Education</h3>
+        <p>In an era of increasing division, ESDEI is tackling one of our nation's most pressing challenges: political polarization. By teaching young people to genuinely understand and articulate multiple perspectives on complex issues, we're building a foundation for a more civically engaged and collaborative future.</p>
+
+        <div class="polarization-box">
+          <h4>How We're Making a Difference</h4>
+          <p>Through debate education, students learn that seeing all sides of an argument isn't about abandoning their beliefs—it's about strengthening their ability to engage in meaningful dialogue. When middle schoolers practice arguing both for and against a position, they develop empathy, critical thinking, and the communication skills necessary to bridge divides rather than deepen them.</p>
+          <p>This isn't just about winning competitions. It's about creating a generation of citizens who can listen, understand, collaborate, and find common ground even when they disagree. By starting this education in middle school, we're shaping future leaders who will approach civic engagement with nuance, respect, and open-mindedness.</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🔍</div>
+          <h3>See All Sides</h3>
+          <p>Students learn to research, understand, and articulate multiple perspectives on complex issues—a critical skill for breaking down echo chambers and fostering genuine dialogue across differences.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🤝</div>
+          <h3>Foster Collaboration</h3>
+          <p>Through structured debate and respectful discourse, we teach students that disagreement doesn't mean division. Building communication bridges creates a more united community.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🗳️</div>
+          <h3>Civic Engagement</h3>
+          <p>Equipping young people with the tools to engage thoughtfully with important issues, preparing them to be informed, empathetic citizens who contribute to a healthier democracy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" class="section">
+      <h2>The Ripple Effect</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>💙 Give Back to Our Community</h3>
+          <p>Share our passion and experience with younger students, creating a supportive community that fosters growth, mutual understanding, and collaborative problem-solving.</p>
+        </div>
+        <div class="card">
+          <h3>🚀 Prepare for High School &amp; Beyond</h3>
+          <p>Equip students with the skills and confidence they need to excel in competition and in life, creating a seamless transition to Eastlake's program while building lifelong critical thinking abilities.</p>
+        </div>
+        <div class="card">
+          <h3>🌟 Transform Perspectives</h3>
+          <p>Students who learn to genuinely engage with opposing viewpoints become better listeners, stronger thinkers, and more effective communicators in every aspect of their lives.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section">
+      <h2>Our Programs</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Perspective-Building Workshops</h3>
+          <p>Interactive sessions where students practice arguing multiple sides of real-world issues, learning that understanding different viewpoints strengthens rather than weakens their own reasoning.</p>
+        </div>
+        <div class="card">
+          <h3>Collaborative Debate Rounds</h3>
+          <p>Hands-on debate experience where students work together to explore complex topics, receiving constructive feedback in a supportive environment that values listening as much as speaking.</p>
+        </div>
+        <div class="card">
+          <h3>Mentorship Program</h3>
+          <p>One-on-one pairing with Eastlake student mentors who model respectful discourse, critical analysis, and how to engage with difficult topics while maintaining empathy and open-mindedness.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="section">
+      <h2>Skills for Life &amp; Democracy</h2>
+      <div class="benefits">
+        <ul>
+          <li><strong>Multiperspective Thinking:</strong> Analyze complex issues from all angles.</li>
+          <li><strong>Empathetic Communication:</strong> Understand and articulate viewpoints different from your own.</li>
+          <li><strong>Critical Analysis:</strong> Identify credible information and strong arguments.</li>
+          <li><strong>Confident Expression:</strong> Build public speaking skills for school and life.</li>
+          <li><strong>Collaborative Spirit:</strong> Practice respectful discourse and mutual learning.</li>
+          <li><strong>Civic Readiness:</strong> Engage thoughtfully with important issues.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="cta">
+      <h2>Join the Movement</h2>
+      <p style="font-size:1.2rem; margin-bottom:1rem;">
+        Whether you're a middle school student eager to learn, a parent interested in our programs, or a school administrator looking to partner with us, we'd love to hear from you!
+      </p>
+      <button onclick="location.href='mailto:esdei@eastlake.edu?subject=ESDEI%20Inquiry'">Contact Us</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Eastlake Speech &amp; Debate Education Initiative | Eastlake High School</p>
+    <p style="margin-top:.5rem; opacity:.8;">Building bridges, not walls. One conversation at a time.</p>
+  </footer>
 </body>
 </html>
